@@ -14,9 +14,11 @@
 		},
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
-			"supportsTablet": true
+			"supportsTablet": true,
+			"package": "com.prashasti.visionverse"
 		},
 		"android": {
+			"package": "com.prashasti.visionverse",
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/images/adaptive-icon.png",
 				"backgroundColor": "#ffffff"
