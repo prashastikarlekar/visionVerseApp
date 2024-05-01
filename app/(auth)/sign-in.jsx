@@ -8,8 +8,11 @@ import FormField from "../../components/FormField";
 import CustomButton from "../../components/CustomButton";
 import { Link } from "expo-router";
 import { getCurrentUser, signIn } from "../../lib/appwrite";
+import { useGlobalContext } from "../../context/GlobalProvider";
+import { router } from "expo-router";
 
 const SignIn = () => {
+	const { setUser, setIsLoggedIn } = useGlobalContext();
 	const [form, setForm] = useState({ email: "", password: "" });
 	const [isSubmitting, setIsSubmitting] = useState(false);
 	const submit = async () => {
@@ -21,10 +24,10 @@ const SignIn = () => {
 		try {
 			await signIn(form.email, form.password);
 			const result = await getCurrentUser();
-			setSourceMapRange(result);
+			setUser(result);
 			setIsLoggedIn(true);
 
-			Alert.alert("Success", "Logged in successfully");
+			// Alert.alert("Success", "Logged in successfully");
 			router.replace("/home");
 		} catch (error) {
 			Alert.alert("Error", error.message);
