@@ -32,7 +32,7 @@ Built with React Native for seamless user experiences, Animatable for captivatin
 You can access the live Android APK of VisionVerse on Expo by clicking [here](https://expo.dev/accounts/prashastikarlekar/projects/VisionVerse/builds/9a6b2ad5-277e-436e-98c9-82b8b5862b1c).
 
 ## Screenshots
-[<img src="./assets/photo1.jpg" width="50" height="100" />]
+
 ![Screenshot 1](./assets/photo1.jpg) ![Screenshot 2](./assets/photo2.jpg) ![Screenshot 3](./assets/photo3.jpg)
 
 ![Screenshot 4](./assets/photo4.jpg) ![Screenshot 5](./assets/photo5.jpg) ![Screenshot 6](./assets/photo6.jpg)
