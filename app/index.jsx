@@ -17,11 +17,21 @@ export default function App() {
 		<SafeAreaView className='bg-primary h-full'>
 			<ScrollView contentContainerStyle={{ height: "100%" }}>
 				<View className='w-full items-center min-h-[85vh] justify-center px-4'>
-					<Image
-						source={images.logo}
+					{/* <Image
+						source={images.logo_3}
 						className='w-[130px] h-[84px]'
 						resizeMode='contain'
-					/>
+					/> */}
+					<View className='flex-row items-center mt-5 pt-3'>
+						<Image
+							source={images.logo_2}
+							resizeMode='contain'
+							className='w-[40px] h-[35px]'
+						/>
+						<Text className='text-white font-pbold text-3xl justify-center items-center'>
+							VisionVerse
+						</Text>
+					</View>
 					<Image
 						source={images.cards}
 						className='max-w-[380px] w-full h-[300px]'

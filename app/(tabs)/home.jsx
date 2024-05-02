@@ -52,7 +52,7 @@ const Home = () => {
 							</View>
 							<View className='mt-1.5'>
 								<Image
-									source={images.logoSmall}
+									source={images.logo_2}
 									className='w-9 h-10'
 									resizeMode='contain'
 								/>
